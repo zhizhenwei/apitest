@@ -1,0 +1,139 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "test_case.test_case",
+    "children" : [ {
+      "name" : "验证账号为空发送验证码失败",
+      "uid" : "4a03c940d6b5c3de",
+      "parentUid" : "344aeebded4b212b56ed26a52ea56797",
+      "status" : "passed",
+      "time" : {
+        "start" : 1645492131188,
+        "stop" : 1645492131310,
+        "duration" : 122
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'title': '验证账号为空发送验证码失败', 'account': {'method': 'post', 'url': 'login/send_code', 'data': {'uname': ''}}, 'expected': {'$..status': -2, '$..data': None}}" ]
+    }, {
+      "name" : "验证账号格式错误发送验证码失败",
+      "uid" : "328996b972d0d3fe",
+      "parentUid" : "344aeebded4b212b56ed26a52ea56797",
+      "status" : "passed",
+      "time" : {
+        "start" : 1645492131312,
+        "stop" : 1645492131349,
+        "duration" : 37
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'title': '验证账号格式错误发送验证码失败', 'account': {'method': 'post', 'url': 'login/send_code', 'data': {'uname': 'error'}}, 'expected': {'$..status': -2, '$..data': None}}" ]
+    }, {
+      "name" : "验证正确账号发送验证码成功",
+      "uid" : "fc18a11f80a2b85a",
+      "parentUid" : "344aeebded4b212b56ed26a52ea56797",
+      "status" : "passed",
+      "time" : {
+        "start" : 1645492131350,
+        "stop" : 1645492131425,
+        "duration" : 75
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'title': '验证正确账号发送验证码成功', 'account': {'method': 'post', 'url': 'login/send_code', 'data': {'uname': '16666666666'}}, 'expected': {'$..status': 1, '$.msg': '手机验证码请求成功'}}" ]
+    }, {
+      "name" : "验证55秒内重复发送验证码失败",
+      "uid" : "be68f2c73fe55d46",
+      "parentUid" : "344aeebded4b212b56ed26a52ea56797",
+      "status" : "passed",
+      "time" : {
+        "start" : 1645492131426,
+        "stop" : 1645492131498,
+        "duration" : 72
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'title': '验证55秒内重复发送验证码失败', 'account': {'method': 'post', 'url': 'login/send_code', 'data': {'uname': '16666666666'}}, 'expected': {'$..status': -1, '$.data.msg': '55秒内只能发送一次'}}" ]
+    }, {
+      "name" : "账号为空登录失败",
+      "uid" : "d308fa0b3e678db3",
+      "parentUid" : "344aeebded4b212b56ed26a52ea56797",
+      "status" : "passed",
+      "time" : {
+        "start" : 1645492131501,
+        "stop" : 1645492131529,
+        "duration" : 28
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'title': '账号为空登录失败', 'account': {'method': 'post', 'url': 'login/index', 'data': {'uname': None, 'code': '15935745'}}, 'extract': None, 'expected': {'$..status': -2, '$..msg': '亲，用户信息输入错误哦'}}" ]
+    }, {
+      "name" : "密码为空登录失败",
+      "uid" : "5bdfb3e6107157f2",
+      "parentUid" : "344aeebded4b212b56ed26a52ea56797",
+      "status" : "passed",
+      "time" : {
+        "start" : 1645492131531,
+        "stop" : 1645492131567,
+        "duration" : 36
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'title': '密码为空登录失败', 'account': {'method': 'post', 'url': 'login/index', 'data': {'uname': 'right#cai', 'code': None}}, 'extract': None, 'expected': {'$..status': -2, '$..msg': '亲，验证码错误,请重试哦'}}" ]
+    }, {
+      "name" : "正确账号错误密码登录失败",
+      "uid" : "28ba22ef8db17477",
+      "parentUid" : "344aeebded4b212b56ed26a52ea56797",
+      "status" : "passed",
+      "time" : {
+        "start" : 1645492131568,
+        "stop" : 1645492131607,
+        "duration" : 39
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'title': '正确账号错误密码登录失败', 'account': {'method': 'post', 'url': 'login/index', 'data': {'uname': 'right#cai', 'code': '15935745'}}, 'extract': None, 'expected': {'$..status': -2, '$..msg': '亲，验证码错误,请重试哦'}}" ]
+    }, {
+      "name" : "错误账号正确密码登录失败",
+      "uid" : "ed99e01e0f8f4cfe",
+      "parentUid" : "344aeebded4b212b56ed26a52ea56797",
+      "status" : "passed",
+      "time" : {
+        "start" : 1645492131609,
+        "stop" : 1645492131645,
+        "duration" : 36
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'title': '错误账号正确密码登录失败', 'account': {'method': 'post', 'url': 'login/index', 'data': {'uname': 'right#ca', 'code': '159357456'}}, 'extract': None, 'expected': {'$..status': -2, '$..data': None}}" ]
+    }, {
+      "name" : "正确账号密码登录成功",
+      "uid" : "7c70a7a49327d8da",
+      "parentUid" : "344aeebded4b212b56ed26a52ea56797",
+      "status" : "passed",
+      "time" : {
+        "start" : 1645492131647,
+        "stop" : 1645492131767,
+        "duration" : 120
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'title': '正确账号密码登录成功', 'account': {'method': 'post', 'url': 'login/index', 'data': {'uname': 'right#cai', 'code': '159357456'}}, 'extract': None, 'expected': {'$..status': 1, '$..msg': '登录成功'}}" ]
+    }, {
+      "name" : "正确账号验证码登录成功",
+      "uid" : "ed922e6eff8435ec",
+      "parentUid" : "344aeebded4b212b56ed26a52ea56797",
+      "status" : "passed",
+      "time" : {
+        "start" : 1645492131769,
+        "stop" : 1645492131900,
+        "duration" : 131
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'title': '正确账号验证码登录成功', 'account': {'method': 'post', 'url': 'login/index', 'data': {'uname': '16666666666', 'code': '666666'}}, 'extract': {'token': '$..token'}, 'expected': {'$..status': 1, '$..msg': '登录成功'}}" ]
+    } ],
+    "uid" : "test_case.test_case"
+  } ]
+}

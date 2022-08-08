@@ -1,0 +1,74 @@
+{
+  "uid" : "328996b972d0d3fe",
+  "name" : "验证账号格式错误发送验证码失败",
+  "fullName" : "test_case.test_case.TestCase#test_send_code",
+  "historyId" : "fc2eb45848ad73f9a8fd16810ecbe209",
+  "time" : {
+    "start" : 1645492131312,
+    "stop" : 1645492131349,
+    "duration" : 37
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1645492131165,
+      "stop" : 1645492131187,
+      "duration" : 22
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "zhizhenweis-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "43652-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'title': '验证账号格式错误发送验证码失败', 'account': {'method': 'post', 'url': 'login/send_code', 'data': {'uname': 'error'}}, 'expected': {'$..status': -2, '$..data': None}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "328996b972d0d3fe.json",
+  "parameterValues" : [ "{'title': '验证账号格式错误发送验证码失败', 'account': {'method': 'post', 'url': 'login/send_code', 'data': {'uname': 'error'}}, 'expected': {'$..status': -2, '$..data': None}}" ]
+}

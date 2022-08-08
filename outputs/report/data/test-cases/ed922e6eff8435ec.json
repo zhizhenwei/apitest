@@ -1,0 +1,74 @@
+{
+  "uid" : "ed922e6eff8435ec",
+  "name" : "正确账号验证码登录成功",
+  "fullName" : "test_case.test_case.TestCase#test_login",
+  "historyId" : "96c4ba51dddea3fec39639db96e2e59b",
+  "time" : {
+    "start" : 1645492131769,
+    "stop" : 1645492131900,
+    "duration" : 131
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1645492131165,
+      "stop" : 1645492131187,
+      "duration" : 22
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "zhizhenweis-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "43652-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'title': '正确账号验证码登录成功', 'account': {'method': 'post', 'url': 'login/index', 'data': {'uname': '16666666666', 'code': '666666'}}, 'extract': {'token': '$..token'}, 'expected': {'$..status': 1, '$..msg': '登录成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ed922e6eff8435ec.json",
+  "parameterValues" : [ "{'title': '正确账号验证码登录成功', 'account': {'method': 'post', 'url': 'login/index', 'data': {'uname': '16666666666', 'code': '666666'}}, 'extract': {'token': '$..token'}, 'expected': {'$..status': 1, '$..msg': '登录成功'}}" ]
+}

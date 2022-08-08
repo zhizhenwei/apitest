@@ -1,0 +1,74 @@
+{
+  "uid" : "ed99e01e0f8f4cfe",
+  "name" : "错误账号正确密码登录失败",
+  "fullName" : "test_case.test_case.TestCase#test_login",
+  "historyId" : "7f6ee12c9b8bc6e3762808c64ab32246",
+  "time" : {
+    "start" : 1645492131609,
+    "stop" : 1645492131645,
+    "duration" : 36
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1645492131165,
+      "stop" : 1645492131187,
+      "duration" : 22
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "zhizhenweis-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "43652-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'title': '错误账号正确密码登录失败', 'account': {'method': 'post', 'url': 'login/index', 'data': {'uname': 'right#ca', 'code': '159357456'}}, 'extract': None, 'expected': {'$..status': -2, '$..data': None}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ed99e01e0f8f4cfe.json",
+  "parameterValues" : [ "{'title': '错误账号正确密码登录失败', 'account': {'method': 'post', 'url': 'login/index', 'data': {'uname': 'right#ca', 'code': '159357456'}}, 'extract': None, 'expected': {'$..status': -2, '$..data': None}}" ]
+}

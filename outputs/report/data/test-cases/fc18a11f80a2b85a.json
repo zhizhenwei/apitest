@@ -1,0 +1,74 @@
+{
+  "uid" : "fc18a11f80a2b85a",
+  "name" : "验证正确账号发送验证码成功",
+  "fullName" : "test_case.test_case.TestCase#test_send_code",
+  "historyId" : "a16ed6a96741bc2fe7502f5ca18ca768",
+  "time" : {
+    "start" : 1645492131350,
+    "stop" : 1645492131425,
+    "duration" : 75
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1645492131165,
+      "stop" : 1645492131187,
+      "duration" : 22
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "zhizhenweis-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "43652-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'title': '验证正确账号发送验证码成功', 'account': {'method': 'post', 'url': 'login/send_code', 'data': {'uname': '16666666666'}}, 'expected': {'$..status': 1, '$.msg': '手机验证码请求成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fc18a11f80a2b85a.json",
+  "parameterValues" : [ "{'title': '验证正确账号发送验证码成功', 'account': {'method': 'post', 'url': 'login/send_code', 'data': {'uname': '16666666666'}}, 'expected': {'$..status': 1, '$.msg': '手机验证码请求成功'}}" ]
+}
